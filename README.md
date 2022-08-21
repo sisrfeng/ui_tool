@@ -9,14 +9,9 @@ does not work with zero configuration. You can use other plugins.
 
 Please read [help](doc/ddu.txt) for details.
 
-Note: I have created
-[Japanese article](https://zenn.dev/shougo/articles/ddu-vim-beta) for ddu.vim.
 
-Ddu is the abbreviation of "dark deno-powered UI". It provides an extensible and
-asynchronous UI framework for neovim/Vim8.
-
-The development is supported by
-[github sponsors](https://github.com/sponsors/Shougo/). Thank you!
+Ddu is the abbreviation of "dark deno-powered UI". 
+asynchronous UI framework  
 
 <!-- vim-markdown-toc GFM -->
 
@@ -30,8 +25,10 @@ The development is supported by
 
 ## Introduction
 
-I have chosen denops.vim framework to create new plugin. Because denops.vim is
-better than neovim Python interface.
+I have chosen denops.vim framework to create new plugin.
+Because denops.vim is better than
+neovim Python interface.
+
 
 - Easy to setup
 - Minimal dependency
@@ -43,10 +40,7 @@ better than neovim Python interface.
 
 ## Install
 
-**Note:** Ddu.vim requires Neovim (0.6.0+ and of course, **latest** is
-recommended) or Vim 8.2.0662. See [requirements](#requirements) if you aren't
-sure whether you have this.
-
+ 
 For vim-plug
 
 ```viml
@@ -68,30 +62,10 @@ Plug 'Shougo/ddu.vim'
 call plug#end()
 ```
 
-For dein.vim
 
-```viml
-call dein#begin()
-
-call dein#add('vim-denops/denops.vim')
-call dein#add('Shougo/ddu.vim')
-
-" Install your UIs
-
-" Install your sources
-
-" Install your filters
-
-" Install your kinds
-
-" Install your columns
-
-call dein#end()
-```
-
-**Note:** Ddu.vim does not include any extra plugins. You must install them you
-want manually. You can search ddu plugins from
-[here](https://github.com/topics/ddu-vim).
+**Note:** Ddu.vim does not include any extra plugins.
+You must install them you
+want manually. You can search ddu plugins from  [here](https://github.com/topics/ddu-vim).
 
 ### Requirements
 
@@ -104,7 +78,7 @@ Ddu.vim requires both Deno and denops.vim.
 
 ```vim
 " You must set the default ui.
-" Note: ff ui
+
 " https://github.com/Shougo/ddu-ui-ff
 call ddu#custom#patch_global({
     \ 'ui': 'ff',
@@ -169,6 +143,3 @@ Please see: https://github.com/Shougo/ddu.vim/issues/10
 
 ![ddu.vim](https://user-images.githubusercontent.com/41495/154783539-469f773a-ab05-437e-9827-9cc6d1444f80.png)
 
-## Plans
-
-- [ ] XXX
